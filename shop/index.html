@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>ColourHub · Trade order desk</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="engine.js"></script>
+  <script defer src="confirmation.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="#order-desk" aria-label="ColourHub order desk">Colour<span>Hub</span><span class="brand-dot">.</span></a>
+      <nav aria-label="Workspace">
+        <a class="nav-link" href="#order-desk">Order desk</a>
+        <button type="button" id="show-drafts" class="nav-link">Saved drafts <span id="draft-count">0</span></button>
+      </nav>
+    </div>
+  </header>
+  <main id="order-desk" class="workspace">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <span class="eyebrow">Trade portal</span>
+        <h1 id="page-title">Trade order desk</h1>
+        <p>Build a paint order, review its net price and submit it for delivery.</p>
+      </div>
+      <div class="hero-photo" aria-hidden="true"></div>
+    </section>
+    <section class="toolbar" aria-label="Workshop controls">
+      <div class="field inline-field"><label for="build">Build</label><select id="build"></select></div>
+      <div class="field inline-field"><label for="role">Role</label><select id="role"><option>Buyer</option><option>Viewer</option></select></div>
+      <span class="environment"><span class="dot"></span>Local training store</span>
+      <button type="button" class="text-button reset" id="reset">Reset cart</button>
+    </section>
+    <noscript><p>This local shop needs JavaScript to calculate prices and save orders. Enable JavaScript, then reload this file.</p></noscript>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <div class="order-grid">
+      <section class="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading"><h2 id="catalog-title">Product catalogue</h2></div>
+        <div id="products" class="products" role="group" aria-label="Choose a product"></div>
+        <section class="configuration" aria-labelledby="product-title">
+          <div class="product-heading"><div><p id="product-sku" class="eyebrow"></p><h3 id="product-title"></h3></div><div class="unit"><strong id="unit-price"></strong><small>net per pack</small></div></div>
+          <form id="add-form">
+            <div class="config-fields">
+              <div class="field"><label for="pack">Pack size</label><select id="pack"></select></div>
+              <div class="field"><label for="quantity">Quantity <span>(packs)</span></label><input id="quantity" type="number" min="1" max="500" step="1" value="1" required></div>
+              <div class="field"><label for="tint">Tint code <span>(optional)</span></label><input id="tint" type="text" autocomplete="off" maxlength="16" placeholder="CH-1180-02"></div>
+            </div>
+            <p id="product-hint" class="hint"></p>
+            <div class="add-row"><button class="primary" type="submit" id="add-button">Add to cart</button></div>
+          </form>
+        </section>
+      </section>
+      <section class="cart-panel" id="cart-panel" aria-labelledby="cart-title">
+        <div class="cart-heading"><div><p class="eyebrow">Current order</p><h2 id="cart-title">Your cart</h2></div><span class="line-count" id="line-count">0 lines</span></div>
+        <div id="draft-context" class="draft-context" hidden></div>
+        <div id="cart-lines"></div>
+        <div id="cart-bottom" hidden>
+          <dl class="totals"><div><dt>Line subtotal</dt><dd id="cart-subtotal"></dd></div><div><dt>Volume discount</dt><dd id="cart-discount"></dd></div><div class="grand-total"><dt>Order net total</dt><dd id="cart-total"></dd></div></dl>
+          <button type="button" class="primary wide" id="review">Review order</button>
+          <button type="button" class="secondary wide" id="save">Save draft</button>
+        </div>
+      </section>
+    </div>
+    <footer><span>ColourHub Trade Portal</span><span>Fictional products and orders · EUR net prices</span></footer>
+  </main>
+  <dialog id="drafts-dialog" aria-labelledby="drafts-title">
+    <div class="dialog-inner"><div class="dialog-heading"><h2 id="drafts-title">Saved drafts</h2><button type="button" class="close" aria-label="Close saved drafts" data-close>×</button></div><p id="draft-intro" class="helper"></p><div id="saved-drafts"></div></div>
+  </dialog>
+  <dialog id="review-dialog" aria-labelledby="review-title">
+    <div class="dialog-inner">
+      <div class="dialog-heading"><div><p id="review-kicker" class="eyebrow">Checkout</p><h2 id="review-title">Order summary</h2></div><button type="button" class="close" aria-label="Close order summary" data-close>×</button></div>
+      <div id="summary-content"></div>
+      <form id="checkout-form">
+        <div class="checkout-fields"><div class="field"><label for="delivery">Delivery method</label><select id="delivery"><option>Standard</option><option>Express</option></select></div><div class="field"><label for="delivery-date">Delivery date</label><input type="date" id="delivery-date" required></div></div>
+        <p class="hint" id="date-hint"></p>
+        <div id="sds-wrap" class="sds" hidden><input type="checkbox" id="sds"><label for="sds">I confirm that I have reviewed the safety data sheet.</label></div>
+        <p class="form-error" id="checkout-error" role="alert" hidden></p>
+        <button class="primary wide" type="submit" id="submit-order">Submit order</button>
+      </form>
+      <div id="receipt-actions" hidden><button type="button" class="primary wide" id="download">Download confirmation PDF</button><button type="button" id="new-order" class="secondary wide">Start a new order</button></div>
+    </div>
+  </dialog>
+</body></html>

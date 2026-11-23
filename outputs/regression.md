@@ -1,0 +1,29 @@
+# My release test selection
+
+**Build and named change:**
+**Affected surfaces and source:**
+**Available time in minutes:**
+
+Enter the catalog case name once per row. Include the requested retest. Identify a new case separately if the catalog supplies no estimate.
+
+| Case | Minutes | Surface or risk | Why select it | Expected result and source | Execution status | Observation or evidence |
+| --- | ---: | --- | --- | --- | --- | --- |
+| | | | | | planned | |
+| | | | | | planned | |
+
+**Selected minutes:**
+**Remaining minutes:**
+**Full catalog estimate:**
+
+### Independent reviews
+
+| Reviewer | Task given | Actual tool call or manual fallback | Returned finding and source |
+| --- | --- | --- | --- |
+| Impact reviewer | | | |
+| Coverage reviewer | | | |
+
+**Disagreement and my decision:**
+**Deferred case, residual risk and reason:**
+**Requirement or dependency to clarify:**
+**Peer feedback and action:**
+**Release recommendation based on the checks actually run:**

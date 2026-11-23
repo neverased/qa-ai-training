@@ -1,0 +1,13 @@
+case,minutes,scope
+"Discount at 199, 200 and 201 packs",10,Read the cart discount and line total after each quantity change for one product and pack size.
+Cart and summary agree on a 200-pack line,6,Compare the cart with the summary for a single line on the same order.
+PDF confirmation includes the discounted total,8,Submit a 50-pack order of five-litre Exterior coat. Open its confirmation PDF and read the final amount.
+Approval uses the net amount after discount,8,Submit 130 packs of five-litre Exterior coat. Observe the final order state and discounted amount.
+Different pack sizes keep separate discount counts,8,"Use the same product in two pack sizes, with 30 packs on one line and 25 on the other."
+Removing a cart line recalculates the total,8,"Remove one line from a multi-line cart, then check the remaining lines and total."
+"First discount at 49, 50 and 51 packs",14,Cross the entry point for the first quantity discount in the cart.
+Mixed-item summary shows both line totals,8,Open an order summary containing two different products and compare line totals.
+Express delivery for a solvent primer,15,"Choose a solvent product, inspect available delivery methods and the submission acknowledgement."
+Custom tint on a twenty-litre pack,9,Attempt to apply a custom colour to a twenty-litre pack.
+Latest permitted delivery date,17,Check the last permitted date and the following date for an order submitted before the cutoff.
+A viewer tries to submit a draft,9,Open a saved draft as a Viewer and inspect the available actions.

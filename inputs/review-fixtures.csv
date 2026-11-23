@@ -1,0 +1,8 @@
+row,input,claimed_expectation
+Cart at 199 packs,199 five-litre packs of Exterior coat,The line gets a 10% discount.
+Cart at 200 packs,200 five-litre packs of Exterior coat,The line gets a 5% discount.
+Cart at 201 packs,201 five-litre packs of Exterior coat,The line gets a 10% discount.
+Approval after the line discount,"130 five-litre packs of Exterior coat at EUR 40 each, standard colour, Buyer submits",The order must enter Awaiting approval.
+First discount at 50 packs,50 five-litre packs of Exterior coat,The line gets a 5% discount.
+Cart at 49 packs,49 five-litre packs of Exterior coat,The line gets no discount.
+Two pack sizes of the same product,30 one-litre packs and 30 five-litre packs of Exterior coat on separate lines,Both lines get a 5% discount.
