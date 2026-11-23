@@ -40,9 +40,13 @@ inputs/raw-notes.md + inputs/product-rules.md + inputs/gcss-training.md + your o
 
 ### 6. Does the issue record an observed price?
 
-[GitHub issue #1](https://github.com/neverased/qa-ai-training/issues/1). After the reply, expand the activity and record the source the app used. If it used `gh issue view`, label it GitHub CLI. If it called a GitHub issue tool, record the tool name. Open the local `inputs/ticket-no-observation.md` in your editor and compare the two texts.
+Start a new standalone app session in **qa-ai-training → This computer → Current checkout**. Clear any previously selected reviewer by clicking the **×** on its chip. Make sure the app shows **Default agent**. The workshop clone includes the [read-only Workshop Issues connector](https://github.com/neverased/qa-ai-training/blob/main/.github/mcp.json).
 
-> Read this GitHub issue using the connected GitHub issues tool: https://github.com/neverased/qa-ai-training/issues/1. Return its number, title and the exact sentence requesting the 200-pack check. Say whether the reporter supplied an observed price. Leave the issue unchanged.
+> Use only workshop-issues/issue_read with method get, owner neverased, repo qa-ai-training and issue_number 1. Return the issue title and the exact sentence requesting the check. Was a run recorded? If this tool is unavailable, say exactly what is missing. Leave the issue unchanged.
+
+Expand the activity group and then **Workshop Issues · Get issue details**. Under **Arguments**, confirm `method: get`, owner `neverased`, repository `qa-ai-training` and issue number `1`. In the returned issue, check the title and find the sentence about a recorded run in its body. Compare the result with [issue #1 on GitHub](https://github.com/neverased/qa-ai-training/issues/1) and `inputs/ticket-no-observation.md`.
+
+If the chat lists only file tools, check the agent chip. If the connector is still unavailable in Default, check that your clone contains `.github/mcp.json`, reopen that local checkout and follow any approved sign-in prompt. If your account cannot use the connector, read the issue in the browser and record **browser** as your source.
 
 ## Exercise 2  Choose a targeted regression
 
