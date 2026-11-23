@@ -16,6 +16,8 @@ Use a fresh chat for each run. Copy the actual-result field verbatim, including 
 
 **Baseline versus revised output on the same ticket:**
 **What the second ticket tells me:**
+**Wrapper review: draft, source ticket and suggested correction:**
+
 **Change to propose to the agent owner:**
 **Remaining uncertainty or next example:**
-**Local commit:**
+**Experimental local commit and evidence for the owner:**

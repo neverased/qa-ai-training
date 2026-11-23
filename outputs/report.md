@@ -15,6 +15,10 @@ Record the observer for each claim. Use your own run for the sprint check and at
 | Missing evidence and next question | | | |
 | Reviewer correction | | | |
 
+For the sprint report, link your local cart capture with `[200-pack cart](cart-200.png)`. Ask a peer to open it with the report. For the separate source check of issue #1, record the source used (connector, browser or supplied file) and whether it contains an observed run.
+
+**Issue #1 source and recorded run:**
+
 ### Investigating the shipping report
 
 | Possible explanation | Supporting or contrary evidence | Missing evidence | Who could check it |

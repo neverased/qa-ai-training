@@ -11,16 +11,16 @@ Score the actual plan. Use 0 for missing or wrong, 1 for partly usable and 2 for
 | Relevance to this release | | | |
 
 **Total out of 10:**
-**Rewritten test row:**
+**Peer’s difficulty, rewritten row and why it matters:**
 
 ### Comparing two review prompts
 
-Use two fresh chats with the same model and the same seven inputs. Keep any additional synthetic practice row out of the scored set.
+Start two fresh Default agent chats with the same named model and the same two files: `inputs/product-rules.md` and `inputs/review-fixtures.csv`. Both chats score the same seven rows. Paste each complete response here before the answer key is shown. Keep any additional synthetic practice row out of the scored set.
 
 **Model and files:**
 **Practice row, expected value and arithmetic check:**
-**Prompt A and its exact flagged row names:**
-**Prompt B and its exact flagged row names:**
+**Raw response A and its exact flagged row names:**
+**Raw response B and its exact flagged row names:**
 
 After the trainer reveals the key, count each named row once.
 

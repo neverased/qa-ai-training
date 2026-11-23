@@ -11,7 +11,9 @@ Enter the catalog case name once per row. Include the requested retest. Identify
 | | | | | | planned | |
 | | | | | | planned | |
 
-**Selected minutes:**
+**Check actually run, actual elapsed minutes and evidence:**
+
+**Selected minutes (estimate):**
 **Remaining minutes:**
 **Full catalog estimate:**
 

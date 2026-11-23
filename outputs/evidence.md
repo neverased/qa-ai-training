@@ -13,6 +13,8 @@ Use one row per action. Read the screen before recording an actual result. Inclu
 | 200 | | | | |
 | 201 | | | | |
 
+At 200 packs, save your capture as `outputs/cart-200.png`. In the 200 row, add `[200-pack cart](cart-200.png)` and open it before changing the quantity. Use the cart line to read the rate.
+
 ### Retest on the next build
 
 | Build | Case and action | Expected | Observed | Evidence and conclusion |
