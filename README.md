@@ -14,10 +14,10 @@ You need a desktop browser and VS Code with access to GitHub Copilot Chat. Git e
    code .
    ```
 2. In Finder or File Explorer open **shop/index.html** in a browser. Set **Build** to **3.2.0** and **Role** to **Buyer**. **Reset cart** starts a fresh order. Use fictional data only.
-3. Open Copilot Chat in VS Code, sign in with your approved account and choose the Copilot environment if the editor offers a choice. Attach `inputs/product-rules.md` using **Add Context** or drag it into the chat. Ask: “Quote the rule for the quantity that first qualifies for a 10% discount. Name the file you read.” Match the reply against the file.
+3. When VS Code opens the reviewed workshop folder in Restricted Mode, use **Manage Workspace Trust** to trust this folder. Open Copilot Chat in VS Code, sign in with your approved account and choose the **Copilot (SDK)** environment if the editor offers a choice. On VS Code 1.147, choose a workshop profile through **Chat → Add Context (+) → Agent…**, then select **Ticket reviewer** or **Risk coordinator**. Attach `inputs/product-rules.md` using **Add Context** or drag it into the chat. Ask: “Quote the rule for the quantity that first qualifies for a 10% discount. Name the file you read.” Match the reply against the file.
 4. If Git is unavailable, choose **Code → Download ZIP** on GitHub, extract the folder and open it in VS Code. You can run the shop and edit your exercise files. Complete the commit on a Git-enabled machine. Copilot requires network access. The shop works offline.
 
-[Open the complete copyable prompts for each exercise](WORKSHOP_PROMPTS.md).
+[Open the complete copyable prompts for each exercise](WORKSHOP_PROMPTS.md) or [download the four-page Word reference](handouts/Participant_Quick_Reference_Day2_v3.docx).
 
 ## Exercise 1 — Reproduce a discount report
 
