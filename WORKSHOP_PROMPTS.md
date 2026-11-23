@@ -40,7 +40,7 @@ inputs/raw-notes.md + inputs/product-rules.md + inputs/gcss-training.md + your o
 
 ### 6. Does the issue record an observed price?
 
-[GitHub issue #1](https://github.com/neverased/qa-ai-training/issues/1). Open the local `inputs/ticket-no-observation.md` in your editor for comparison after Copilot replies.
+[GitHub issue #1](https://github.com/neverased/qa-ai-training/issues/1). After the reply, expand the activity and record the source the app used. If it used `gh issue view`, label it GitHub CLI. If it called a GitHub issue tool, record the tool name. Open the local `inputs/ticket-no-observation.md` in your editor and compare the two texts.
 
 > Read this GitHub issue using the connected GitHub issues tool: https://github.com/neverased/qa-ai-training/issues/1. Return its number, title and the exact sentence requesting the 200-pack check. Say whether the reporter supplied an observed price. Leave the issue unchanged.
 
@@ -98,27 +98,33 @@ Ticket reviewer + inputs/untrusted-comment.md + inputs/product-rules.md
 
 ### 19. What does the reviewer write when evidence is missing?
 
-Select **Ticket reviewer**. Attach only `inputs/ticket-no-observation.md` and `inputs/product-rules.md`. Save the reply and the tool activity before editing the profile.
+Select **Ticket reviewer**. Paste the prompt below into the project session. It names the two allowed files. Save the reply and the tool activity before editing the profile.
 
-> Draft a manual test report using the attached ticket and product rules. Give the expected result, actual result, supporting evidence and your next question for the tester. Use only the two attached files. Do not open other files. Reply in chat only.
+> Read only inputs/ticket-no-observation.md and inputs/product-rules.md. Draft a manual test report. Give the expected result, actual result, supporting evidence and your next question for the tester. Reply in chat only. Leave all files unchanged.
 
 ### 20. Change one rule and repeat the same ticket
 
-In a fresh session select the revised **Ticket reviewer**, then add the same two files and select the same model. Compare the exact text in the actual-result field and the files used.
+In a fresh session select the revised **Ticket reviewer**, then select the same model and keep both file paths unchanged. Compare the exact text in the actual-result field and the files used.
 
 Add this rule to the body of the profile before the second run:
 
 > Fill in Actual result only when the ticket includes an observation from a test run. Otherwise leave it empty and ask for the evidence.
 
-> Draft a manual test report using the attached ticket and product rules. Give the expected result, actual result, supporting evidence and your next question for the tester. Use only the two attached files. Do not open other files. Reply in chat only.
+> Read only inputs/ticket-no-observation.md and inputs/product-rules.md. Draft a manual test report. Give the expected result, actual result, supporting evidence and your next question for the tester. Reply in chat only. Leave all files unchanged.
 
 ### 21. Does the reviewer preserve a genuine observation?
 
-For each fresh session select the revised **Ticket reviewer**. Add the rules and just one ticket. Check the tool activity against these two sources.
+For each fresh session select the revised **Ticket reviewer**. Paste the appropriate prompt below. Check the tool activity for exactly those two file reads.
 
-Use `inputs/ticket-with-observation.md` first, then a new file containing only: “Expect a 10% discount on 200 packs. The test is scheduled for tomorrow.”
+**Observed ticket**
 
-> Draft a manual test report using the attached ticket and product rules. Give the expected result, actual result, supporting evidence and your next question for the tester. Use only the two attached files. Do not open other files. Reply in chat only.
+> Read only inputs/ticket-with-observation.md and inputs/product-rules.md. Draft a manual test report. Give the expected result, actual result, supporting evidence and your next question for the tester. Reply in chat only. Leave all files unchanged.
+
+**Scheduled test**
+
+Create `inputs/ticket-future-check.md` containing only “Expect a 10% discount on 200 packs. The test is scheduled for tomorrow.” Open a new session with the same reviewer and model.
+
+> Read only inputs/ticket-future-check.md and inputs/product-rules.md. Draft a manual test report. Give the expected result, actual result, supporting evidence and your next question for the tester. Reply in chat only. Leave all files unchanged.
 
 ### 23. Give your regression prompt a reusable name
 
