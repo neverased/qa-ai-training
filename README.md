@@ -2,6 +2,8 @@
 
 In three exercises you will investigate a pricing complaint, choose regression tests for a release and improve a reviewer that drafts test reports. Complete all three exercises on your own computer using your copy of ColourHub, a fictional paint shop. Save your own results before each whole-group discussion. You can volunteer a finding or ask a question at 10:27–10:30, 14:10–14:15 and 17:52–18:00.
 
+Use the [ColourHub glossary](GLOSSARY.md) to look up terms such as pack size, line discount and net order amount.
+
 ## Set up your local workshop
 
 You need the standalone GitHub Copilot app with access to a model, a browser and a text editor. Git lets you clone the repository and commit your work locally. The shop opens directly from its HTML file. Before the 09:30 exercise, sign in to Copilot and check that you can choose a model. In VS Code, open **Terminal → New Terminal**, type `git --version` and run the commands below. Without Git, use the ZIP option below. Node.js and npm are optional for the trainer’s installer demonstration and engine tests.
