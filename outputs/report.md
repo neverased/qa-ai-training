@@ -13,9 +13,9 @@ Record the observer for each claim. Use your own run for the sprint check and at
 | Actual behaviour and observer | | | |
 | Evidence or local capture | | | |
 | Missing evidence and next question | | | |
-| Reviewer correction | | | |
+| My replay result or correction | | | |
 
-For the sprint report, link your local cart capture with `[200-pack cart](cart-200.png)`. Ask a peer to open it with the report. For the separate source check of issue #1, record the source used (connector, browser or supplied file) and whether it contains an observed run.
+For the sprint report, link your local cart capture with `[200-pack cart](cart-200.png)`. Reset the cart and follow your own report to repeat the 200-pack check. Open the PNG from your report, compare the rate and total and record what matched or needed correction. For the separate source check of issue #1, record the source used (connector, browser or supplied file) and whether it contains an observed run.
 
 **Issue #1 source and recorded run:**
 

@@ -27,5 +27,5 @@ Enter the catalog case name once per row. Include the requested retest. Identify
 **Disagreement and my decision:**
 **Deferred case, residual risk and reason:**
 **Requirement or dependency to clarify:**
-**Peer feedback and action:**
+**Step I clarified after trying my saved plan:**
 **Release recommendation based on the checks actually run:**

@@ -1,6 +1,6 @@
 # Copilot prompts for the ColourHub workshop
 
-Open your cloned ColourHub project in the standalone GitHub Copilot app. Save your observations in the six files under `outputs/`. In a VS Code terminal, check that Git is available. Sign in to the desktop app and confirm a model is available before the exercises start at 09:30. In a fresh local session on **This computer → Current checkout**, verify the **workshop-day2** branch. Add the listed files with `@` or `/attach-files`. Choose the same named model for comparable runs. Inspect the tool activity to see which files, issues, agents or skills were actually used. If a question card appears, read it and reply before saving the final answer.
+Work on your own computer throughout the three exercises. Open your local ColourHub folder in the standalone GitHub Copilot app. Save your observations in the six files under `outputs/`. In a VS Code terminal, check that Git is available. Sign in to the desktop app and confirm a model is available before the exercises start at 09:30. In a fresh local session on **This computer → Current checkout**, verify your folder and, if using Git, the **workshop-day2** branch. Add the listed files with `@` or `/attach-files`. Choose the same named model for comparable runs. Inspect the tool activity to see which files, issues, agents or skills were actually used. If a question card appears, read it and reply before saving the final answer.
 
 [Return to the workshop instructions](README.md)
 
@@ -50,7 +50,7 @@ Start a new standalone app session in **qa-ai-training → This computer → Cur
 
 Expand the activity group and then **Workshop Issues · Get issue details**. Under **Arguments**, confirm `method: get`, owner `neverased`, repository `qa-ai-training` and issue number `1`. In the returned issue, check the title and find the sentence about a recorded run in its body. Compare the result with [issue #1 on GitHub](https://github.com/neverased/qa-ai-training/issues/1) and `inputs/ticket-no-observation.md`.
 
-If the chat lists only file tools, check the agent chip. If the connector is still unavailable in Default, check that your clone contains `.github/mcp.json`, reopen that local checkout and follow any approved sign-in prompt. If your account cannot use the connector, read the issue in the browser and record **browser** as your source. A report based only on issue #1 has a blank **Actual result** because nobody recorded a run there. Keep your own cart reading in the sprint report and in `outputs/evidence.md`. Ask a partner to open the sprint report and its linked PNG on your laptop, or share both files together.
+If the chat lists only file tools, check the agent chip. If the connector is still unavailable in Default, check that your clone contains `.github/mcp.json`, reopen that local checkout and follow any approved sign-in prompt. If your account cannot use the connector, read the issue in the browser and record **browser** as your source. A report based only on issue #1 has a blank **Actual result** because nobody recorded a run there. Keep your own cart reading in the sprint report and in `outputs/evidence.md`. Reset the cart in build 3.2.0. Repeat the 200-pack check using your saved sprint report. Open its linked PNG and compare the displayed rate and total with your new reading. Record what matched and clarify any missing step. You can bring a finding or question to the group at 10:27.
 
 ## Exercise 2  Choose a targeted regression
 
@@ -84,7 +84,7 @@ Choose **Risk coordinator**. Add `inputs/pricing-change.md`, `inputs/product-rul
 
 Compare the two training plans: the recorded coordinator kept 10 + 6 + 8 minutes in catalogue cases and proposed a new 12-minute combined approval/PDF check (36 planned, 9 free). The separate catalogue-only plan selected 10 + 6 + 8 + 8 + 8 (40 planned, 5 free). Your own selection may differ. Record a deferred risk, actual elapsed time for the check you ran and your release recommendation in `outputs/regression.md`.
 
-Ask a partner to follow one row in your plan and rewrite the step that caused most doubt. In `outputs/review.md`, score all five criteria from 0 to 2, with a quotation or observation supporting each score. For example, “Check the PDF” earns 0/2 for reproducibility until you specify the order and the expected amount.
+Close the chat and reopen the plan you saved in `outputs/regression.md`. Follow one row exactly as written, using only the details it gives you. In `outputs/review.md`, score the original plan on all five criteria from 0 to 2. Cite a row for each score, then write down the original wording and your corrected step. For example, “Check the PDF” earns 0/2 for reproducibility until you specify the order and the expected amount.
 
 ### 16. Try two prompts on the same review sheet
 
@@ -104,7 +104,7 @@ Leave this generated row outside the seven fixed rows.
 
 > Read inputs/product-rules.md and inputs/review-fixtures.csv. Check each claim against the applicable quantity, per-line discount or approval rule. Recalculate any amounts. Return each incorrect row name once, with the rule and corrected expectation.
 
-After the key is shown, count the distinct names in each list. Precision is correct flags divided by all flags. Recall is correct flags divided by all known errors. Calculate both for your own runs and explain one mismatch if you found one.
+After the key is shown, count the distinct names in each list. Precision is correct flags divided by all flags. Recall is correct flags divided by all known errors. Calculate both for your own runs and explain one mismatch if you found one. At 14:10, the group can discuss differences in the results and ask questions.
 
 ## Exercise 3  Change a reviewer and build a reusable skill
 
@@ -124,7 +124,7 @@ Select **Ticket reviewer**. Paste the prompt below into the project session. It 
 
 In a fresh session select the revised **Ticket reviewer**, then select the same model and keep both file paths unchanged. Compare the exact text in the actual-result field and the files used.
 
-Add this rule to the body of the profile before the second run:
+If you used the project ZIP, save a copy of the original profile outside the project first. Add this rule to the body of the profile before the second run:
 
 > Fill in Actual result only when the ticket includes an observation from a test run. Otherwise leave it empty and ask for the evidence.
 
@@ -144,7 +144,7 @@ Create `inputs/ticket-future-check.md` containing only “Expect a 10% discount 
 
 > Read only inputs/ticket-future-check.md and inputs/product-rules.md. Draft a manual test report. Give the expected result, actual result, supporting evidence and your next question for the tester. Reply in chat only. Leave all files unchanged.
 
-Record the outcome for each ticket in `outputs/agent-comparison.md`. A field containing “Empty.” has text in it. Score the presence of an unsupported price separately from the requirement to leave the field blank. Review the diff and commit the experimental change and comparison on your local workshop branch.
+Record the outcome for each ticket in `outputs/agent-comparison.md`. A field containing “Empty.” has text in it. Score the presence of an unsupported price separately from the requirement to leave the field blank. With Git, review the diff and commit the experimental change and comparison on your local workshop branch. With the ZIP, compare the original profile you saved against the revised file. Keep both versions and the results on your computer.
 
 ### 22. Review a draft when the shared agent is managed by its owner
 
@@ -158,7 +158,7 @@ Record the draft, the ticket and the correction in your comparison. The shared a
 
 Your review-regression skill + pricing-change.md + product-rules.md + regression.csv
 
-Save this starter in .github/skills/review-regression/SKILL.md, then add your own review question.
+Save this starter in `.github/skills/review-regression/SKILL.md` and add your own review question.
 
 ```markdown
 ---
@@ -171,6 +171,8 @@ Read the change, business rules and test durations. Choose checks that fit the b
 Open a fresh local project chat, select **Default agent** and attach `inputs/pricing-change.md`, `inputs/product-rules.md` and `inputs/regression.csv`. After sending the prompt, open the skill activity and confirm the name **review-regression**.
 
 > /review-regression Use the attached pricing change, product rules and test catalog. We have 45 minutes. Give us a shortlist and one risk left open.
+
+After the pricing run, check the proposed minutes and risks against the sources. Review the question you added to `SKILL.md`. Refine it if the pricing run exposed a gap and save your version for prompt 26.
 
 ### 24. Find and install one additional skill
 
@@ -186,22 +188,24 @@ inputs/tint-change.md + inputs/product-rules.md
 
 Run both paths separately. For the second path, save the untinted draft, select **Saved drafts → Open draft**, add the tint and submit. Save the two resulting status screens as `outputs/tint-fresh.png` and `outputs/tint-edited-draft.png`. In the two evidence cells of `outputs/handover.md`, link the matching PNG by filename and open both links.
 
-### 26. Can another tester reuse your skill?
+### 26. Can your skill review a different change?
 
-Swap seats with a partner and use the skill already saved in their clone. Alternatively, save a copy of your own `SKILL.md` outside `.github/skills/`, copy your partner’s file into `.github/skills/review-regression/SKILL.md` and restore your original after the run.
+Open your own `.github/skills/review-regression/SKILL.md` and check that it contains the review question you saved after the pricing run.
 
-Start a **fresh project chat** on that checkout with **Default agent**. Attach only `inputs/tint-change.md`, `inputs/product-rules.md` and `inputs/regression.csv`. Leave your handover, screenshots and earlier chat out. Use the partner’s skill and send only the following prompt.
+Start a **fresh project chat** in your local folder with **Default agent**. Attach only `inputs/tint-change.md`, `inputs/product-rules.md` and `inputs/regression.csv`. Leave your handover, screenshots and earlier chat out. Invoke your saved skill with the following prompt.
 
 > /review-regression Use the attached change, product rules and catalogue. Which required paths are missing from the catalogue? For each gap, quote the rule and name the closest existing check. Keep new estimates separate from the 45-minute catalogue selection.
 
-Open the skill activity, confirm **review-regression** ran, and save the **complete first reply** in the peer-skill section of your own `outputs/handover.md`. Note the skill author and which missing paths appeared without a hint. You can now send this optional follow-up:
+Open the skill activity, confirm **review-regression** ran, and save the **complete first reply** in the skill section of `outputs/handover.md`. Record your saved review question and which missing paths it identified without a hint. Check each claimed gap against the change and the closest named catalogue row. You can now send this optional follow-up:
 
 > Which catalogue case, if any, covers reopening a saved draft, adding tint and submitting it? What evidence supports your answer?
 
-Label the second reply **after the hint**. The trainer’s recorded example used a prompt that named this route. Compare it with your two results after recording them.
+Label the second reply **after the hint**. The trainer’s recorded example used a prompt that named this route. Compare it with your saved replies after completing your own review.
 
 ### 27. What can we tell the release owner?
 
 Your completed `outputs/handover.md` and `inputs/tint-change.md`. Record both observed order states before you send the prompt.
 
 > Using only outputs/handover.md and inputs/tint-change.md, draft three sentences for the release owner. Name the checked paths, the business risk and the next action. Label missing evidence.
+
+Save your checked release update before 17:52. The final eight minutes are for voluntary examples and whole-group questions.

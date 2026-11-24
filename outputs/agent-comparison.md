@@ -20,4 +20,5 @@ Use a fresh chat for each run. Copy the actual-result field verbatim, including 
 
 **Change to propose to the agent owner:**
 **Remaining uncertainty or next example:**
-**Experimental local commit and evidence for the owner:**
+**Local commit, or original/revised file comparison if using the ZIP:**
+**Evidence for the agent owner:**

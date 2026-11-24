@@ -1,17 +1,17 @@
 # My review of the proposed tests
 
-Score the actual plan. Use 0 for missing or wrong, 1 for partly usable and 2 for sufficient. Quote a row and explain your score.
+Follow one row from your saved plan, then score the plan as originally written. Use 0 for missing or wrong, 1 for partly usable and 2 for sufficient. Quote a row and explain your score.
 
 | Criterion | Score out of 2 | Evidence from the plan | Improvement |
 | --- | ---: | --- | --- |
 | Grounding in the supplied rules | | | |
 | Coverage of affected behaviour | | | |
 | Traceability to a change or rule | | | |
-| Reproducibility by another tester | | | |
+| Reproducibility from the written steps | | | |
 | Relevance to this release | | | |
 
 **Total out of 10:**
-**Peer’s difficulty, rewritten row and why it matters:**
+**Original step, rewritten step and why the change matters:**
 
 ### Comparing two review prompts
 
