@@ -1,0 +1,16 @@
+# Desktop metadata and Word lock files
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+~$*.docx
+
+# Local Node.js installations
+node_modules/
+
+# Screenshots and order confirmations saved during the exercises
+/outputs/**/*.png
+/outputs/**/*.jpg
+/outputs/**/*.jpeg
+/outputs/**/*.pdf
+ColourHub-CH-*.pdf

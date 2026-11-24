@@ -21,6 +21,23 @@ If cloning is unavailable, use **Code → Download ZIP** on GitHub, extract the 
 
 [Open the complete copyable prompts for each exercise](WORKSHOP_PROMPTS.md) or [download the four-page Word reference](handouts/Participant_Quick_Reference_Day2_v3.docx).
 
+### Where to find Express delivery and the confirmation PDF
+
+Open `shop/index.html` in a browser from your clone or fully extracted ZIP. The first screen is **Trade order desk**. If you see HTML source on github.com, open the local file from Finder or File Explorer.
+
+1. Select build **3.2.1** and role **Buyer**. Start with an empty cart. Choose **Exterior coat**, **5 L**, quantity **1**, then **Add to cart**.
+2. In **Your cart**, choose **Review order**. On **Order summary**, open **Delivery method** below the net total. Change **Standard** to **Express**.
+3. Choose **Submit order**. On **Order received**, this €40 order shows **Confirmed**. Choose **Download confirmation PDF**. Orders marked **Awaiting approval** have no download button.
+
+<details>
+<summary>Show the two checkout screens</summary>
+
+![Order summary with Express selected under Delivery method](docs/checkout/delivery-method.png)
+
+![Confirmed order with the Download confirmation PDF button](docs/checkout/download-confirmation.png)
+
+</details>
+
 ## Exercise 1 — Reproduce a discount report
 
 1. Read [the urgent order story](inputs/urgent-order-story.md) and [the rules](inputs/product-rules.md). Ask Copilot which two details need a decision from the product owner. Match its quotations to the two files. Choose one of the two questions to ask the product owner.
