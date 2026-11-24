@@ -19,7 +19,7 @@ git switch -c workshop-day2
 
 If cloning is unavailable, use **Code → Download ZIP** on GitHub, extract the archive, then select the extracted root folder in the app. With the extracted folder, skip the branch and commit commands. Before editing the reviewer in exercise 3, copy its original profile outside the project. Keep the revised profile in the project and save your comparison in `outputs/agent-comparison.md`. The shop works offline. The Copilot conversations use a network connection.
 
-[Open the complete copyable prompts for each exercise](WORKSHOP_PROMPTS.md) or [download the four-page Word reference](handouts/Participant_Quick_Reference_Day2_v3.docx).
+[Open the workshop prompts](WORKSHOP_PROMPTS.md) to copy them into Copilot. [Download the six-page desk reference (PDF)](handouts/Participant_Quick_Reference_Day2_v3.pdf) for the worksheets. Print it on A4, double-sided, flipping on the long edge (three sheets per person). You can also [download the editable Word version](handouts/Participant_Quick_Reference_Day2_v3.docx).
 
 ### Where to find Express delivery and the confirmation PDF
 
