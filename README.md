@@ -30,7 +30,7 @@ Open the same project folder in a text editor. **inputs/** contains the rules, t
 ## Reference
 
 - [ColourHub glossary](GLOSSARY.md) and [product rules](inputs/product-rules.md)
-- [Printable quick reference](handouts/Participant_Quick_Reference_Day2_v3.pdf) and [editable Word copy](handouts/Participant_Quick_Reference_Day2_v3.docx)
+- [Printable quick reference](handouts/Day%202%20-%20Self-Study%20Quick%20Reference.pdf) and [editable Word copy](handouts/Day%202%20-%20Self-Study%20Quick%20Reference.docx)
 - [How to create a project skill](.github/skills/README.md)
 
 ### Where to find Express delivery and the confirmation PDF
