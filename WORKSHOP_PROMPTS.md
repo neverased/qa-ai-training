@@ -111,7 +111,7 @@ Stay with **Risk coordinator**.
 
 > Ask Impact reviewer and Coverage reviewer to work independently in parallel. Give both inputs/pricing-change.md, inputs/product-rules.md and inputs/regression.csv. Ask Impact reviewer for a 45-minute shortlist including the retest. Ask Coverage reviewer for high-risk boundaries and missing checks. Return the workers’ findings, one trade-off and a single plan with each case counted once.
 
-Expand the activity and look for **two separate worker calls** and their results. Record what you can verify in [your plan](outputs/regression.md). If calls are unavailable, open separate chats with each named reviewer, give it its task from the prompt and label the results **separate chats**. Compare the findings and decide which case earns the last available minutes.
+Expand the activity and look for **two separate worker calls** and their results. Record what you can verify in [your plan](outputs/regression.md). If calls are unavailable, open two fresh **Default agent** chats. Give each the same three files. Ask the first for the 45-minute shortlist and the second for missing checks. Record the method as **separate chats**. Compare the findings and decide which case earns the last available minutes.
 
 ### 14. Can you follow your own plan?
 
