@@ -14,3 +14,5 @@ node_modules/
 /outputs/**/*.jpeg
 /outputs/**/*.pdf
 ColourHub-CH-*.pdf
+
+.playwright-mcp/
