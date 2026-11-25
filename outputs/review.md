@@ -1,34 +1,52 @@
-# My review of the proposed tests
+# My review of the regression plan
 
-Follow one row from your saved plan, then score the plan as originally written. Use 0 for missing or wrong, 1 for partly usable and 2 for sufficient. Quote a row and explain your score.
+Open [your saved selection](regression.md). Follow one row as written. Which details did you need to look up? Score the **original wording** before you improve it. Use 0 for wrong or missing, 1 for partly usable and 2 for sufficient.
 
-| Criterion | Score out of 2 | Evidence from the plan | Improvement |
-| --- | ---: | --- | --- |
-| Grounding in the supplied rules | | | |
-| Coverage of affected behaviour | | | |
-| Traceability to a change or rule | | | |
-| Reproducibility from the written steps | | | |
-| Relevance to this release | | | |
+| Could I… | Score (0–2) | Words from the plan that explain my score |
+| --- | ---: | --- |
+| Check the expectation against the product rules? | | |
+| Find checks for the affected behaviour? | | |
+| Trace each chosen check to the change or rule? | | |
+| Repeat a check from the written steps? | | |
+| Explain why each check belongs in this release? | | |
 
-**Total out of 10:**
-**Original step, rewritten step and why the change matters:**
+**Total out of 10:** ___
 
-### Comparing two review prompts
+**A step I tried and the detail I would add:** ___
 
-Start two fresh Default agent chats with the same named model and the same two files: `inputs/product-rules.md` and `inputs/review-fixtures.csv`. Both chats score the same seven rows. Paste each complete response here before the answer key is shown. Keep any additional synthetic practice row out of the scored set.
+## Compare two Copilot prompts
 
-**Model and files:**
-**Practice row, expected value and arithmetic check:**
-**Raw response A and its exact flagged row names:**
-**Raw response B and its exact flagged row names:**
+Use the same model and the same seven claims in two fresh chats. Paste both replies below before opening the answer key. The extra practice calculation stays outside the seven-row comparison.
 
-After the trainer reveals the key, count each named row once.
+**Model and files supplied:** ___
 
-| Run | Correct flags | Extra flags | Missed errors | Precision | Recall |
+**Extra practice quantity, expected value and calculation:** ___
+
+**Reply to prompt A:** ___
+
+**Reply to prompt B:** ___
+
+<details>
+<summary>Open the answer key after saving both replies</summary>
+
+Four rows contain errors. Use their names to count the flags in each reply.
+
+| Incorrect row | Correct expectation |
+| --- | --- |
+| Cart at 199 packs | The discount is 5%. |
+| Cart at 200 packs | The discount is 10%. |
+| Approval after the line discount | 130 × EUR 40 × 0.95 is EUR 4,940 net. A standard-colour order at that value confirms automatically. |
+| Two pack sizes of the same product | Each line has 30 packs. Neither line qualifies for a discount. |
+
+The rows for 201, 50 and 49 packs are correct. Check the calculations against [the seven claims](../inputs/review-fixtures.csv) and [the original pricing and approval rules](../inputs/product-rules.md).
+
+</details>
+
+Count each row name once per reply. A **correct flag** names an erroneous row. An **extra flag** names a correct row. A **miss** is an erroneous row the reply left out. Precision = correct flags ÷ (correct + extra flags). Recall = correct flags ÷ 4. If a reply flags nothing, enter “undefined” for precision.
+
+| Reply | Correct flags | Extra flags | Misses | Precision | Recall |
 | --- | ---: | ---: | ---: | --- | --- |
 | A | | | | | |
 | B | | | | | |
 
-Precision is correct flags divided by all flags. Recall is correct flags divided by all erroneous rows in the key. Write “undefined” for a zero denominator.
-
-**Most consequential missed or unnecessary flag:**
+**Which difference would matter most in a release review?** ___

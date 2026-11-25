@@ -1,5 +1,16 @@
-# Your workshop skill
+# Skills you can try in Copilot
 
-In the reusable prompt exercise, create a folder named `review-regression` beside this file and put your procedure in `review-regression/SKILL.md`. Use the same name in its YAML header. Describe when a tester would use it and what evidence the reviewer should return.
+A skill is a saved set of instructions for a task you repeat. Each folder here contains a file named `SKILL.md`. Open one to see what Copilot will be asked to do.
 
-Open a fresh local project chat and check for `/review-regression`. Try it with the pricing change, product rules and catalogue. Include your own review question in the skill. After the first run, refine the question if needed and save your version. Test your revised skill on the second change using [prompt 26](../../WORKSHOP_PROMPTS.md#26-can-your-skill-review-a-different-change) in a fresh chat in your local folder. Save the first reply and check its claims against the catalogue before giving a hint.
+| Skill | Try it when you want to… |
+| --- | --- |
+| [review-ticket](review-ticket/SKILL.md) | Compare a user story with the product rules and decide what to test first. |
+| [explain-code](explain-code/SKILL.md) | Understand a piece of code in plain language. |
+
+To try the ticket review, open a local Copilot chat in this project and enter:
+
+> /review-ticket Review inputs/urgent-order-story.md against inputs/product-rules.md. What should I ask the product owner?
+
+## Create your own regression skill
+
+In [the reusable skill exercise](../../WORKSHOP_PROMPTS.md), create `review-regression/SKILL.md` inside this folder. Copy the starter from the exercise and add your own review question. Open a fresh local project chat and try `/review-regression` on the pricing change. Compare its plan with the test catalogue, refine the question, then try the same skill on the tint change. Record how it performed in [your handover](../../outputs/handover.md).

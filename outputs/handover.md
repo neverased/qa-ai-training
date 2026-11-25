@@ -1,38 +1,38 @@
-# My tinted order release handover
+# My release note for the tint change
 
-**Build, role and time:**
-**Inputs held constant across both orders:**
-**Product rule and change source:**
+Use this page for the two order paths in [the tint change](../inputs/tint-change.md). Record the expected state before you submit either order. Then copy the status you see on screen for each path.
 
-Write expected states before execution. Keep your observations separate for each path.
+**Build and role:** ___
 
-| Starting state and action | Expected submitted state | Actual submitted state | Evidence |
+**Same product, pack size, quantity, tint code and value for both orders:** ___
+
+| What I submitted | Expected state | Status I saw | Screenshot |
 | --- | --- | --- | --- |
-| Create an order with a tinted line already present, then submit | | | |
-| Save an untinted draft, reopen it, add the same tint, then submit | | | |
+| A new order with the tint added before its first submission | | | |
+| An untinted draft that I reopened, tinted and submitted | | | |
 
-Save `outputs/tint-fresh.png` and `outputs/tint-edited-draft.png`. Link the corresponding filename in each evidence cell, e.g. `[Fresh order](tint-fresh.png)`. Open each link to check it.
+Save the two status screens beside this file as `tint-fresh.png` and `tint-edited-draft.png`. In the screenshot cells, enter `[New order](tint-fresh.png)` and `[Reopened draft](tint-edited-draft.png)`. Click each link in Markdown preview and check that it opens the matching order.
 
-**Procedural difference between the paths:**
+**Where did the steps or outcomes differ?** ___
 
-### Reviewing a new change with my revised skill
+## Try my reusable skill on this change
 
-**Review question saved in my skill, model and skill activity seen:**
+**My saved review question and model:** ___
 
-**Complete first reply before a hint:**
+**Skill name shown in the activity:** ___
 
-**Required paths the first reply identified as missing:**
+**First reply:** Paste the complete answer here before asking a follow-up.
 
-**Reply after the optional hint:**
+**Which required paths did it identify as missing?** ___
 
-**Claim I checked against a named catalogue row:**
-**What the catalog already covers:**
-**Important gap and estimated time, if known:**
-**Draft report destination and source for each claim:**
+**Closest named catalogue check and what that check covers:** ___
 
-### Release update
+**Gap and estimated time, if known:** ___
 
-Write three sentences for the release owner covering what you tested, the possible business impact and the next action.
+**Reply after a hint:** If you gave a hint, paste that reply here.
 
-**What remains untested:**
-**Question or finding for the group discussion (optional):**
+## Write the release update
+
+Use three sentences. Say which paths you ran and what you observed, how the difference could affect a Buyer or Approver, and what you recommend doing next. Link the evidence and identify anything you still need to check.
+
+**Update for the release owner:** ___

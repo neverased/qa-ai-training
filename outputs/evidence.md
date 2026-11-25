@@ -1,28 +1,23 @@
-# My manual test evidence
+# My cart measurements
 
-**Environment and build shown in the shop:**
-**Tester role:**
-**Product, pack size and starting state:**
-**Pricing rule used for the expectation:**
+Open this file in your local editor when you start the discount test. You fill it in as you use the shop. Empty cells mean you have yet to take a reading. Save the file before asking Copilot to compare your results.
 
-Use one row per action. Read the screen before recording an actual result. Include the screen name or a link to your own capture.
+**Setup** — Build: ___ · Role: ___ · Product and pack size: ___ · Price per pack: ___
 
-| Quantity | Action and screen | Expected rate and net amount | Observed rate and net amount | Evidence or run time |
-| ---: | --- | --- | --- | --- |
-| 199 | | | | |
-| 200 | | | | |
-| 201 | | | | |
+Use one cart line. Change the quantity, look at the discount on that line and read the net total. Copy both readings into the **I saw** columns. Work out the expected values separately using [the pricing rule](../inputs/product-rules.md).
 
-At 200 packs, save your capture as `outputs/cart-200.png`. In the 200 row, add `[200-pack cart](cart-200.png)` and open it before changing the quantity. Use the cart line to read the rate.
+| Packs | Expected discount | Expected net EUR | Discount I saw | Net EUR I saw | Evidence |
+| ---: | --- | ---: | --- | ---: | --- |
+| 199 | | | | | |
+| 200 | | | | | |
+| 201 | | | | | |
 
-### Retest on the next build
+At **200 packs**, take a screenshot showing the quantity, discount and total before you move to 201. Save the actual PNG next to this file as `cart-200.png`. Paste `[200-pack cart](cart-200.png)` in the 200 row. Open this file in Markdown preview and click the link to check that the picture opens. In chat, attach the PNG itself if you want Copilot to inspect the image. The typed readings above are enough for the calculation.
 
-| Build | Case and action | Expected | Observed | Evidence and conclusion |
-| --- | --- | --- | --- | --- |
-| | | | | |
+## Retest after the pricing fix
 
-### Additional checks
+Switch to the build named in the pricing change. Repeat the 200-pack check and record a fresh reading. Leave your original table above intact.
 
-| Build and role | Route or output | Expected | Observed | Evidence |
+| Build | Action and screen | Expected | I saw | Did it match? |
 | --- | --- | --- | --- | --- |
 | | | | | |

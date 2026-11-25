@@ -1,24 +1,32 @@
-# My agent rule experiment
+# Did my reviewer rule change the answer?
 
-**Agent profile and model:**
-**Rule change:**
-**Common prompt used verbatim:**
-**Product rules and evidence file attached in each run:**
+Use this file when you try the original and revised Ticket reviewer. Save the first answer before changing its rules. Start a fresh chat for each comparison and use the same model.
 
-Use a fresh chat for each run. Copy the actual-result field verbatim, including an empty field. Identify where a claimed observation appears in the attached ticket.
+**Reviewer and model:** ___
 
-| Profile and input | Run or time | Exact actual-result text | Source sentence, if present | Meets the evidence rule? |
+**Prompt repeated across runs:** ___
+
+**Rule I changed:** ___
+
+Copy the actual-result text exactly. If the field is empty, write “[blank]” here so you can distinguish an empty answer from a run you have yet to do. If the reviewer omits the whole field, write “[field missing]”. Quote the observation from the ticket when one exists.
+
+| Reviewer | Ticket supplied with product rules | Actual-result text | Observation in the ticket | Did the reviewer follow the rule? |
 | --- | --- | --- | --- | --- |
-| Original profile, request only | | | | |
-| Revised profile, same request | | | | |
-| Revised profile, observation supplied | | | | |
-| Revised profile, expected-only control from trainer | | | | |
+| Original | Request only | | | |
+| Revised | Same request | | | |
+| Revised | Ticket with a recorded observation | | | |
+| Revised | Scheduled check with an expectation only | | | |
 
-**Baseline versus revised output on the same ticket:**
-**What the second ticket tells me:**
-**Wrapper review: draft, source ticket and suggested correction:**
+**What changed on the same request?** ___
 
-**Change to propose to the agent owner:**
-**Remaining uncertainty or next example:**
-**Local commit, or original/revised file comparison if using the ZIP:**
-**Evidence for the agent owner:**
+**Did the revised reviewer keep the observed result when evidence was supplied?** ___
+
+## Check a draft before proposing the rule
+
+**Draft excerpt and source ticket:** ___
+
+**Unsupported claim, if any, and suggested correction:** ___
+
+**Recommendation to the agent owner and evidence for it:** ___
+
+**Local commit or differences between my saved profile versions:** ___

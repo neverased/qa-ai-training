@@ -7,16 +7,9 @@
         "X-MCP-Readonly": "true",
         "X-MCP-Tools": "issue_read"
       },
-      "tools": ["issue_read"]
-    },
-    "playwright": {
-      "type": "http",
-      "url": "https://api.githubcopilot.com/mcp/",
-      "headers": {
-        "X-MCP-Readonly": "true",
-        "X-MCP-Tools": "playwright_read"
-      },
-      "tools": ["playwright_read"]
+      "tools": [
+        "issue_read"
+      ]
     }
   }
 }
