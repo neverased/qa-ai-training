@@ -4,9 +4,9 @@ Investigate a price in ColourHub, a fictional paint shop. Use your findings to p
 
 ## Start here
 
-1. Get your own copy. On GitHub choose **Code → Download ZIP**, then extract the whole folder. If you use Git, run the commands below in a terminal instead.
+1. Get your own copy. Extract the supplied **Day 2 - ColourHub Practice Files.zip**, or on GitHub choose **Code → Download ZIP** and extract that archive. If you use Git, run the commands below in a terminal instead.
 2. Open **shop/index.html** from the extracted folder or clone in a browser. You should see **Trade order desk**. Choose build **3.2.0**, role **Buyer**, then **Reset cart**. The shop runs locally.
-3. In the standalone **GitHub Copilot** app, sign in and choose **Add repository → Local folder or repository**. Select the folder containing this README. Start a chat in that project. Choose **This computer → Current checkout** so the chat can read the same files you edit. Use **Default agent** to start. Copilot requires a network connection.
+3. In the standalone **GitHub Copilot** app, sign in and choose **New → Repository → Add local folder or repository**. Select the folder containing this README, WORKSHOP_PROMPTS.md and shop/. Check the folder name in the Repository picker. If the app offers a Workspace choice for your Git clone, select **This computer → Current checkout**. Use **Default agent** to start. Copilot requires a network connection.
 4. Open the [step-by-step exercises](WORKSHOP_PROMPTS.md). Work down the page. Paste the quoted prompts into Copilot. When a step names a file to attach, select it with the chat attachment control and check its name before sending.
 
 ```sh

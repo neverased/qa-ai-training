@@ -16,9 +16,13 @@ Open [your saved selection](regression.md). Follow one row as written. Which det
 
 ## Compare two Copilot prompts
 
-Use the same model and the same seven claims in two fresh chats. Paste both replies below before opening the answer key. The extra practice calculation stays outside the seven-row comparison.
+In two fresh chats select the separate two-file folder from [step 16](../WORKSHOP_PROMPTS.md#16-try-two-prompts-on-the-same-review-sheet). Keep this worksheet open in your editor and paste both replies below before opening the answer key. The extra practice calculation stays outside the seven-row comparison.
 
-**Model and files supplied:** ___
+**A — actual model and files read in activity:** ___
+
+**B — actual model and files read in activity:** ___
+
+**Can I compare the two prompts directly?** ___ (same actual model and same two inputs)
 
 **Extra practice quantity, expected value and calculation:** ___
 
